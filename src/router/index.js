@@ -2,15 +2,18 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from "../views/HomeView.vue"
 import subCate from "../views/subCate.vue"
 import NormalReport from "../views/NormalReport.vue"
-import ProblemTicket from"../views/ProblemTicket.vue"
-import StatusTracking from"../views/StatusTracking.vue"
-import AdHomeView from"../views/AdHomeView.vue"
+import ProblemTicket from "../views/ProblemTicket.vue"
+import StatusTracking from "../views/StatusTracking.vue"
+import AdHomeView from "../views/AdHomeView.vue"
 import History from "../views/history.vue"
 import HistoryAd from "../views2/HistoryAd.vue"
 import ProblemTicketAd from "../views2/ProblemTicketAd.vue"
 import StatustrackingAD from "../views2/StatusTrackingAd.vue"
 import StatusLine from "../views2/StatusLine.vue"
 import ProblemDum from "../views2/ProblemDum.vue"
+import Dashboard from "../views2/Dashboard.vue"
+import Overview from "../views2/Overview.vue"
+import OverviewGeneral from "../views2/OverviewGeneral.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -59,23 +62,39 @@ const router = createRouter({
       path: '/problemticketad',
       name: 'problemticketadadmin',
       component: ProblemTicketAd
-  },
-  {
-    path: '/statustrackingad',
-    name: 'statustrackingad',
-    component: StatustrackingAD
-  },
-  {
-    path: '/statusline',
-    name: 'statusline',
-    component: StatusLine
-},
-{
-  path: '/problemdum',
-  name: 'problemdum',
-  component: ProblemDum
-}
-  
+    },
+    {
+      path: '/statustrackingad',
+      name: 'statustrackingad',
+      component: StatustrackingAD
+    },
+    {
+      path: '/statusline',
+      name: 'statusline',
+      component: StatusLine
+    },
+    {
+      path: '/problemdum',
+      name: 'problemdum',
+      component: ProblemDum
+    },
+    {
+      path: '/dashboard',
+      name: 'dashbaord',
+      component: Dashboard
+    },
+    {
+      path: '/overview',
+      name: 'overview',
+      component: Overview
+    },
+    {
+      path: '/overviewgeneral',
+      name: 'overviewgeneral',
+      component: OverviewGeneral
+    }
+
+
   ]
 })
 

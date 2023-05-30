@@ -26,10 +26,18 @@
             </div>
        
         </router-link>  
-        <router-link to="/history" style="text-decoration: none; color: inherit;">
+        
+        <router-link to="/Dashboard" style="text-decoration: none; color: inherit;">
             <div class="card"  >
-                <img src="../images/cancel.png" alt="very basic cancel.png">
-                <h4>Rejected Report</h4>
+                <img src="https://cdn-icons-png.flaticon.com/128/7792/7792127.png" alt="very basic cancel.png">
+                <h4>Dashboard</h4>
+            </div>
+            
+        </router-link>
+        <router-link to="/Overview" style="text-decoration: none; color: inherit;">
+            <div class="card"  >
+                <img src="https://cdn-icons-png.flaticon.com/128/1587/1587554.png" alt="very basic cancel.png">
+                <h4>Overview</h4>
             </div>
             
         </router-link>
@@ -58,7 +66,7 @@
 .card img{
     height: 80px;
     width: 80px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .card h4{
